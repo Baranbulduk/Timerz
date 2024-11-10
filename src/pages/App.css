@@ -1,0 +1,224 @@
+/*/////////// LOADING ///////////*/
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.timerLogo {
+  color: #000000;
+  font-size: 1.25rem;
+  padding: 0;
+  transform-origin: center;
+  animation: spin 2s linear;
+  width: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    scale: 2;
+  }
+  20% {
+    transform: rotate(180deg);
+    scale: 2;
+  }
+  40% {
+    transform: rotate(360deg);
+    scale: 2;
+  }
+  60% {
+    transform: rotate(540deg);
+    scale: 2;
+  }
+  80% {
+    scale: 1;
+    transform: rotate(720deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(720deg);
+  }
+}
+
+.logoText {
+  color: black;
+  margin: 0;
+  animation: logotext 2s linear;
+  display: flex;
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+@keyframes logotext {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+.logoText-z {
+  color: rgb(255, 123, 0);
+  margin-left: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*/////////// SET TIMER ///////////*/
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+}
+
+.timer-input {
+  background-color: transparent;
+  width: 100px;
+  text-align: center;
+  border: none;
+  font-size: 60px;
+}
+
+.timer-decrement,
+.timer-increment {
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.timer-text {
+  margin: 0;
+  color: #22222299;
+  font-size: 20px;
+}
+
+.timer-startButton {
+  background-color: rgb(255, 123, 0);
+  color: white;
+  font-size: 14px;
+  padding: 10px 30px;
+}
+
+/*/////////// ALARM ///////////*/
+.alarm {
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alarmLogo {
+  width: 50px;
+  transform-origin: top;
+  animation: bell 0.3s ease-in-out infinite;
+}
+
+@keyframes bell {
+  0% {
+    rotate: 10deg;
+  }
+  50% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 10deg;
+  }
+}
+
+.alarm-heading {
+  font-size: 40px;
+  color: #000000;
+  margin: 0 0 50px 0;
+}
+
+.alarm-button {
+  background-color: rgb(255, 123, 0);
+  font-size: 14px;
+  color: white;
+  padding: 10px 30px;
+}
+
+/*/////////// ANALOG ///////////*/
+.analog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.analog-timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.hand {
+  background-color: rgb(255, 123, 0);
+  width: 3px;
+  height: 45%;
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 2px);
+  transform-origin: bottom center;
+  z-index: 1;
+}
+
+.center {
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*/////////// DIGITAL ///////////*/
+.digital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.digital-display {
+  font-size: 60px;
+  font-weight: 400;
+}
