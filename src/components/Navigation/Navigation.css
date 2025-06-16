@@ -8,8 +8,8 @@
 
 .navbar__icon {
   position: absolute;
-  left: 125px;
-  top: 20px;
+  left: 15px;
+  top: 10px;
   height: 32px;
   width: 32px;
   cursor: pointer;
@@ -18,26 +18,16 @@
 /*/////////// MENU ///////////*/
 .menu {
   background-color: rgb(255, 123, 0);
-  height: 500px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 10px;
-  left: 111px;
+  top: 0px;
   z-index: 99;
-}
-
-@media (min-width: 900px) {
-  .menu {
-    left: 486px;
-  }
-  .navbar__icon {
-    left: 500px;
-  }
 }
 
 @media (max-width: 900px) and (min-width: 800px) {
